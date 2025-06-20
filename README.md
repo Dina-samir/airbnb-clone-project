@@ -96,6 +96,24 @@ To successfully execute this project, various roles will be essential, each with
 * **REST API:** Detailed documentation will be available through the OpenAPI standard (formerly Swagger). This will include comprehensive descriptions of endpoints for users, properties, bookings, and payments, along with request/response schemas.
 * **GraphQL API:** The GraphQL schema itself acts as documentation, providing a clear contract for the available data and operations. Tools like GraphiQL can be used for interactive exploration.
 
+### API Security
+
+Securing the backend APIs is paramount to protect sensitive user data, maintain system integrity, and ensure a trustworthy platform. The following key security measures will be implemented:
+
+* **Authentication:** Verifying the identity of users accessing the API. This will be primarily handled using JWT (JSON Web Tokens), ensuring that only legitimate users can access protected endpoints after successful login. Authentication is crucial for protecting user accounts and ensuring that only authorized individuals can perform actions related to their profile or bookings.
+
+* **Authorization:** Determining what an authenticated user is permitted to do. Role-based access control (RBAC) will be implemented to define different permission levels (e.g., guests can book, hosts can manage properties). Authorization is vital to prevent unauthorized access to sensitive operations (like deleting another user's property) and to ensure data privacy.
+
+* **Rate Limiting:** Restricting the number of API requests a user or IP address can make within a given time frame. This helps prevent brute-force attacks, denial-of-service (DoS) attacks, and abuse of the API resources. Rate limiting is crucial for maintaining the stability and availability of the service and preventing malicious activity.
+
+* **Input Validation and Sanitization:** All incoming data from API requests will be rigorously validated and sanitized to prevent common web vulnerabilities like SQL injection and cross-site scripting (XSS). This is critical for protecting the database from malicious data and ensuring the integrity of the application.
+
+* **Secure Communication (HTTPS/SSL/TLS):** All API communication will be encrypted using HTTPS/SSL/TLS protocols. This protects data in transit from eavesdropping and tampering, which is essential for safeguarding user credentials, payment information, and all other sensitive data exchanged between clients and the server.
+
+* **Error Handling and Logging:** Implementing robust error handling to avoid revealing sensitive system information in error messages and thorough logging of security-related events. This helps in identifying and responding to security incidents effectively.
+
+Security is crucial across all key areas: protecting user data (personal details, payment info), securing payments (ensuring transactions are legitimate and untampered), and maintaining the integrity of property listings and booking information.
+
 ## 📌 Endpoints Overview
 
 ### REST API Endpoints
