@@ -38,7 +38,7 @@ To successfully complete the project tasks, learners must:
 * Understand software development lifecycle practices, including security, CI/CD, and database design.
 * Be comfortable with modern tools such as Docker, GitHub Actions, or similar CI/CD platforms.
 
-## 🛠️ Features Overview
+## 🛠️ Feature Breakdown
 
 1.  **API Documentation**
     * **OpenAPI Standard:** The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration for consumers.
