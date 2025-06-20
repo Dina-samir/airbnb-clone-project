@@ -149,6 +149,30 @@ Security is crucial across all key areas: protecting user data (personal details
 * `PUT /reviews/{review_id}/` - Update a specific review
 * `DELETE /reviews/{review_id}/` - Delete a specific review
 
+
+## CI/CD Pipeline
+
+**CI/CD (Continuous Integration/Continuous Delivery)** pipelines are automated processes that enable developers to deliver code changes more frequently and reliably.
+
+* **Continuous Integration (CI):** Involves frequently merging code changes into a central repository, followed by automated builds and tests. This helps in detecting integration issues early in the development cycle.
+* **Continuous Delivery (CD):** Extends CI by automatically preparing code changes for a release to a production environment. This ensures that the software can be released at any time in a consistent and repeatable manner.
+
+**Why CI/CD is important for this project:**
+
+CI/CD pipelines are crucial for the AirBnB Clone project as they will:
+* **Improve Code Quality:** Automated tests (unit, integration, end-to-end) will run with every code push, catching bugs and issues early.
+* **Accelerate Development:** Automating repetitive tasks like building, testing, and deployment frees up developers to focus on writing new features.
+* **Reduce Risks:** Consistent and automated deployment processes minimize human error and ensure that only tested and validated code reaches production.
+* **Enable Faster Feedback:** Developers get immediate feedback on their code changes, allowing for quick iteration and bug fixes.
+* **Ensure Consistency:** Environments (development, testing, production) can be made more consistent through containerization and automated deployments.
+
+**Tools that could be used:**
+
+* **GitHub Actions:** A powerful and integrated CI/CD platform directly within GitHub repositories. It allows for defining workflows to automate various tasks, including building Docker images, running tests, and deploying applications.
+* **Docker:** Essential for containerizing the application and its dependencies, ensuring consistent environments across development, testing, and production. Docker images can be built as part of the CI pipeline.
+* **Python `pytest` (for testing):** A popular Python testing framework that will be integrated into the CI pipeline to run automated tests.
+
+  
 ---
 
 ## Key Highlights
